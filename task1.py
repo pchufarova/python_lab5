@@ -9,7 +9,7 @@ def find_words(text):
 
 
 def find_numbers(text):
-    res = re.findall(r"\(\d+\)", text)
+    res = re.findall(r"\((\d+)\)", text)
     return res
 
 
