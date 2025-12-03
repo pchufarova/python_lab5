@@ -15,7 +15,7 @@ def find_emails(text):
 
 
 def find_websites(text):
-    res = re.findall(r"[a-z]+://[a-z-]+(?:\.[a-z-]+)+", text)
+    res = re.findall(r"(?<=\s)[a-z]+://[a-z-]+(?:\.[a-z-]+)+", text)
     return res
 
 
